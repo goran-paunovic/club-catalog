@@ -1,8 +1,6 @@
 package com.pgcode.clubs.catalog.domain;
 
 import jakarta.persistence.*;
-import jakarta.validation.Valid;
-import jakarta.validation.constraints.NotBlank;
 import lombok.Getter;
 import lombok.Setter;
 import org.hibernate.annotations.ColumnDefault;
@@ -44,11 +42,4 @@ public class Club {
 
     @Column(name = "description", length = Integer.MAX_VALUE)
     private String description;
-
-/*
- TODO [Reverse Engineering] create field to map the 'location' column
- Available actions: Define target Java type | Uncomment as is | Remove column mapping
-    @Column(name = "location", columnDefinition = "geometry")
-    private Object location;
-*/
 }
